@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="info.js"></script>
+    <title>Gulnar Hasan-zada</title>
+</head>
+
+<body>
+<div class="main-container">
+        <header class="header">
+            <a href="honesty.html"><img src="poppy_logo.jpg" alt="Poppy Logo" width="250"></a>
+            <h5>START UP WITH US!</h5>
+        </header>
+        <div class="section">
+            <nav class="nav">
+                <ul>
+                    <li><a href="honesty.html" class="nav-link">> Honesty</a></li>
+                    <li><a href="info.html" class="nav-link active">> Info</a></li>
+                    <li><a href="reflection.html" class="nav-link">> Reflection</a></li>
+                </ul>
+            </nav>
+            
+            <section class="content">
+                <h4>Info</h4>
+                <form onsubmit="return onFormSubmit()" action="https://httpbin.org/post" method="post" name="signup">
+                    <input type="hidden" name="lastName" id="lastName" value="Hasan-zada" />
+                    <input type="hidden" name="studentId" id="studentId" value="141524207" />
+                    <div class="form-container">
+                        <div class="form-item">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="eduLevel">Education Level</label>
+                            <select name="eduLevel" id="eduLevel" required>
+                                <option value="">-select-</option>
+                                <option value="1">Technical Diploma</option>
+                                <option value="2">College Diploma</option>
+                                <option value="3">Bachelor's Degree</option>
+                                <option value="4">Master's Degree</option>
+                                <option value="5">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <label>Education Status</label>
+                            <input type="radio" id="graduated" name="eduStatus" value="1" required>
+                            <label for="graduated">Graduated</label>
+                            <input type="radio" id="enrolled" name="eduStatus" value="2" required>
+                            <label for="enrolled">Currently Enrolled</label>
+                            <input type="radio" id="notGraduated" name="eduStatus" value="3" required>
+                            <label for="notGraduated">Did not graduate</label>
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="age">Age </label>
+                            <input type="number" id="age" name="age" required min="18" max="60">
+                        </div>
+                        <div class="form-item">
+                            <button type="reset" class="btn reset">Reset</button>
+                            <button type="submit" class="btn submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <aside class="aside">
+                <h4>Messages</h4>
+                <div id="messages">
+
+                </div>
+            </aside>
+        </div>
+        <footer class="footer"> <p>&copy; 2021</p></footer>
+</div>
+
+</body>
+</html>
